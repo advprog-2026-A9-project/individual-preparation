@@ -40,6 +40,14 @@ public class VectorUtility {
     
     public double norm(double[] v1) {
         // TODO: Implement me properly!
-        return 0.0;
+
+        double sum = 0;
+
+        for (Double value : v1) {
+            sum += value * value;
+        }
+
+        return Math.sqrt(sum);
+
     }
 }
